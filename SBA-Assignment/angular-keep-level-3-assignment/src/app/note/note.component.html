@@ -1,0 +1,11 @@
+<div class="cardList" (click)="editNote()">
+    <mat-card class="card-width">
+        <mat-card-header>
+          <mat-card-title><h4>{{ note?.noteTitle }}</h4></mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div>{{ note?.noteContent }}</div>
+          <div>{{ note?.noteStatus }}</div>
+        </mat-card-content>
+      </mat-card>
+</div>

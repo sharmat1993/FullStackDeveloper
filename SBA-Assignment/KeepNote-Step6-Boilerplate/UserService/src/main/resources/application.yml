@@ -1,0 +1,19 @@
+spring:
+  data:
+    mongodb:
+      database: notedb
+      port: 27017
+      host: localhost
+#      authentication-database: dbAdmin
+#      username: ${MONGO_USERNAME}
+#      password: ${MONGO_PASSWORD}
+#      database: ${MONGO_DATABASE}
+#      port: ${MONGO_PORT}
+#      host: ${MONGO_HOST}
+  application:
+    name: user-service
+server:
+  port: 8080
+
+
+

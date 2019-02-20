@@ -1,0 +1,30 @@
+<!-- Label to display any error messages -->
+<label class="error-message">{{ errMessage }}</label>
+
+<!-- Expansion panel to add new notes -->
+<br>
+<mat-accordion>
+  <mat-expansion-panel class="card-width">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Take a note
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-form-field>
+      <input matInput placeholder="Title" name="title" [(ngModel)]="title"/>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput placeholder="Text" name="text" [(ngModel)]='text'></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Select status" [(ngModel)]="status">
+        <mat-option *ngFor="let state of states" [value]="state">
+          {{ state }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-action-row>
+      <button mat-button (click)="addNote()">Done</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>

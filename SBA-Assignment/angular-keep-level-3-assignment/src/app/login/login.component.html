@@ -1,0 +1,12 @@
+<div>
+  <p class="error-message">{{submitMessage}}</p>
+  <label for='userId'>UserId</label>
+  <input class="userId" type="text" [formControl]="userId"/>
+</div>
+<div>
+  <label for='userPassword'>UserPassword</label>
+  <input class="userPassword" type="password" [formControl]="userPassword"/>
+</div>
+<div>
+  <button (click)="loginSubmit()">Submit</button>
+</div>
